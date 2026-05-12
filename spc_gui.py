@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-SPC workflow GUI.
+SPC workflow GUI by Dr. C. Liu.
 
 This interface wraps the existing SPC workflow without modifying the original
 scripts:
