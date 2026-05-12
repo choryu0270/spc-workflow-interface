@@ -1,6 +1,6 @@
 # SPC workflow interface
 
-GUI for data processing of the the Single Photon Counting (SPC) spectrometer on J-KAREN-P facility.
+GUI for data processing of the the Single Photon Counting (SPC) spectrometer at J-KAREN-P facility.
 
 ## Requirements
 
