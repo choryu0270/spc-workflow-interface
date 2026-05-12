@@ -8,8 +8,8 @@ scripts:
 1. calculate average background
 2. subtract background
 3. compile spc.f90
-4. generate single photon images
-5. plot spectra without temperature fitting
+4. generate single photon images (SPI)
+5. plot spectra
 """
 
 import glob
