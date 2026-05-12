@@ -44,9 +44,9 @@ Replace `/path/to/spc_interface` with the local path.
 Notes:
 
 - Plot output is saved as `.png`.
-- Use Previous/Next to preview generated PNG spectra. Use Export current to PDF
+- Use `Previous`/`Next` to preview generated PNG spectra. Use `Export current to PDF`
   to save the currently displayed spectrum as a single-page PDF.
-- Use Load PNG folder in the preview panel to browse previously generated
+- Use `Load spectra folder` in the preview panel to browse previously generated
   spectra without running the full workflow.
 - Automatic background selection reads the first worksheet of the shot sheet:
   rows whose `W-PM` value contains `blank` or `trigger` are matched to `.tif` files
