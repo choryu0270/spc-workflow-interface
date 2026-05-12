@@ -27,7 +27,7 @@ cd /path/to/spc_interface
 python spc_gui.py
 ```
 
-Replace `/path/to/spc_interface` with that local path.
+Replace `/path/to/spc_interface` with the local path.
 
 ## Workflow
 
