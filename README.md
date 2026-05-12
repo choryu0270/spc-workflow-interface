@@ -1,5 +1,7 @@
 # SPC workflow interface
 
+GUI for data processing of the the Single Photon Counting (SPC) spectrometer on J-KAREN-P facility.
+
 ## Requirements
 
 Python packages:
@@ -14,8 +16,7 @@ System tools:
 - Python with tkinter support
 - gfortran, for compiling `spc.f90`
 
-The shot-sheet reader uses Python standard-library modules for `.xlsx` parsing,
-so `openpyxl` is not required.
+The shot-sheet reader uses Python standard-library modules for `.xlsx` parsing.
 
 ## Run
 
