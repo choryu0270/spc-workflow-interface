@@ -38,7 +38,7 @@ Replace `/path/to/spc_interface` with the local path.
 2. Subtract `B.tif` from the remaining raw `.tif` files in the experiment folder.
    Output is saved to `Background Subtracted`.
 3. Compile the copied `spc.f90` to the local `spc` executable.
-4. Run `spc` on `Background Subtracted` and save `Single Photon Image`.
+4. Run `spc` on `Background Subtracted` and save `Single Photon Image`(SPI).
 5. Plot spectra from `Single Photon Image`. The generated PNG spectra are loaded into the preview panel on the right.
 
 Notes:
