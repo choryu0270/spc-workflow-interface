@@ -206,7 +206,7 @@ class SpcGui:
         self.spi_status = StringVar(value="Single Photon Image: not created")
         self.spectra_status = StringVar(value="Spectra-temp: not created")
 
-        self.spi_threshold = StringVar(value="5")
+        self.spi_threshold = StringVar(value="75")
         self.spi_max_hit = StringVar(value="10000")
 
         self.filter_file = StringVar(value=str(REPO_DIR / "metal-filter.pckl"))
