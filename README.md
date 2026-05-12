@@ -45,10 +45,6 @@ replace `/path/to/spc-script/spc_interface` with that local path.
 
 Notes:
 
-- The default Fortran source is the copied `spc_interface/spc.f90`.
-- The spectrum plotting follows `temp-fitting-simple.py`: histogram, convert
-  count to keV, apply Be/Kapton/QE correction, and save one spectrum image per
-  tif.
 - Plot output is saved as `.png`.
 - Use Previous/Next to preview generated PNG spectra. Use Export current to PDF
   to save the currently displayed spectrum as a single-page PDF.
@@ -56,7 +52,7 @@ Notes:
   spectra without running the full workflow.
 - Automatic background selection reads the first worksheet of the shot sheet:
   rows whose `W-PM` value contains `blank` or `trigger` are matched to tif files
-  ending in `_Shot_No.tif`.
+  ending in `_Shot_No.tif`. If it does not work, please try to choose background tif files manually.
 - Step 1 moves the selected background files into `[experiment folder]/Backgrounds`.
   If you need to keep originals in place, duplicate them before using the GUI.
 
