@@ -31,8 +31,8 @@ Replace `/path/to/spc_interface` with the local path.
 
 ## Workflow
 
-1. Select multiple background `.tif` files manually, or select a shot sheet plus
-   experiment folder for automatic background-shot selection. Then click
+1. Select multiple background `.tif` files manually, or select a shot sheet `.xlsx` plus
+   experiment folder (which contains SPC `.tif` files) for automatic background-shot selection. Then click
    `Create B.tif`. The GUI creates `Backgrounds` inside the experiment folder,
    moves those files there, and creates `B.tif`.
 2. Subtract `B.tif` from the remaining raw `.tif` files in the experiment folder.
