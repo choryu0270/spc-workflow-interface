@@ -20,16 +20,14 @@ The shot-sheet reader uses Python standard-library modules for `.xlsx` parsing.
 
 ## Run
 
-From a terminal, activate the Python environment that contains the required
-packages, then change into this interface folder and run:
+Change into the interface folder and run:
 
 ```bash
-cd /path/to/spc-script/spc_interface
+cd /path/to/spc_interface
 python spc_gui.py
 ```
 
-If the interface folder is inside a cloned or copied SPC script directory,
-replace `/path/to/spc-script/spc_interface` with that local path.
+Replace `/path/to/spc_interface` with that local path.
 
 ## Workflow
 
