@@ -31,11 +31,11 @@ Replace `/path/to/spc_interface` with the local path.
 
 ## Workflow
 
-1. Select multiple background tif files manually, or select a shot sheet plus
+1. Select multiple background `.tif` files manually, or select a shot sheet plus
    experiment folder for automatic background-shot selection. Then click
    `Create B.tif`. The GUI creates `Backgrounds` inside the experiment folder,
    moves those files there, and creates `B.tif`.
-2. Subtract `B.tif` from the remaining raw tif files in the experiment folder.
+2. Subtract `B.tif` from the remaining raw `.tif` files in the experiment folder.
    Output is saved to `Background Subtracted`.
 3. Compile the copied `spc.f90` to the local `spc` executable.
 4. Run `spc` on `Background Subtracted` and save `Single Photon Image`.
