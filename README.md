@@ -51,13 +51,13 @@ Notes:
 - Use Load PNG folder in the preview panel to browse previously generated
   spectra without running the full workflow.
 - Automatic background selection reads the first worksheet of the shot sheet:
-  rows whose `W-PM` value contains `blank` or `trigger` are matched to tif files
+  rows whose `W-PM` value contains `blank` or `trigger` are matched to `.tif` files
   ending in `_Shot_No.tif`. If it does not work, please try to choose background `.tif` files manually.
 - Step 1 moves the selected background files into `[experiment folder]/Backgrounds`.
   If you need to keep originals in place, duplicate them before using the GUI.
 
 ## Acknowledgement
 
-The original SPC workflow code was developed by Dr. H.F. Lowe and Dr. E.G. Hill
+The original SPC code was developed by Dr. E.G. Hill and Dr. H.F. Lowe 
 at Imperial College London. Many thanks to them for the original version and
 coding foundation.
