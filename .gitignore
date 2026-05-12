@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+
+# Local Fortran build output
+spc
+*.o
+*.mod
+
+# Runtime scratch/output files
+workfile
+fort.*
+
+# Experimental data and generated outputs
+*.tif
+*.tiff
+*.png
+*.pdf
+*.csv
+*.xlsx
+
+# OS/editor files
+.DS_Store
+.idea/
+.vscode/
