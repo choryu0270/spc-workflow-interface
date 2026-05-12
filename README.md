@@ -57,5 +57,5 @@ Notes:
 ## Acknowledgement
 
 The original SPC code was developed by Dr. E.G. Hill and Dr. H.F. Lowe 
-at Imperial College London. Many thanks to them for the original version and
+at Imperial College London. Thanks to them for the original version and
 coding foundation.
