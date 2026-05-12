@@ -1,8 +1,5 @@
 # SPC workflow interface
 
-This folder is a standalone GUI wrapper for the SPC workflow. It does not
-modify the original Python or Fortran files in the parent folder.
-
 ## Requirements
 
 Python packages:
