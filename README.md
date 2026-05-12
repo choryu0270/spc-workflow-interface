@@ -1,0 +1,70 @@
+# SPC workflow interface
+
+This folder is a standalone GUI wrapper for the SPC workflow. It does not
+modify the original Python or Fortran files in the parent folder.
+
+## Requirements
+
+Python packages:
+
+- numpy
+- matplotlib
+- imageio
+- pillow
+
+System tools:
+
+- Python with tkinter support
+- gfortran, for compiling `spc.f90`
+
+The shot-sheet reader uses Python standard-library modules for `.xlsx` parsing,
+so `openpyxl` is not required.
+
+## Run
+
+From a terminal, activate the Python environment that contains the required
+packages, then change into this interface folder and run:
+
+```bash
+cd /path/to/spc-script/spc_interface
+python spc_gui.py
+```
+
+If the interface folder is inside a cloned or copied SPC script directory,
+replace `/path/to/spc-script/spc_interface` with that local path.
+
+## Workflow
+
+1. Select multiple background tif files manually, or select a shot sheet plus
+   experiment folder for automatic background-shot selection. Then click
+   `Create B.tif`. The GUI creates `Backgrounds` inside the experiment folder,
+   moves those files there, and creates `B.tif`.
+2. Subtract `B.tif` from the remaining raw tif files in the experiment folder.
+   Output is saved to `Background Subtracted`.
+3. Compile the copied `spc.f90` to the local `spc` executable.
+4. Run `spc` on `Background Subtracted` and save `Single Photon Image`.
+5. Plot spectra from `Single Photon Image` without temperature fitting.
+   The generated PNG spectra are loaded into the preview panel on the right.
+
+Notes:
+
+- The default Fortran source is the copied `spc_interface/spc.f90`.
+- The spectrum plotting follows `temp-fitting-simple.py`: histogram, convert
+  count to keV, apply Be/Kapton/QE correction, and save one spectrum image per
+  tif.
+- Plot output is saved as `.png`.
+- Use Previous/Next to preview generated PNG spectra. Use Export current to PDF
+  to save the currently displayed spectrum as a single-page PDF.
+- Use Load PNG folder in the preview panel to browse previously generated
+  spectra without running the full workflow.
+- Automatic background selection reads the first worksheet of the shot sheet:
+  rows whose `W-PM` value contains `blank` or `trigger` are matched to tif files
+  ending in `_Shot_No.tif`.
+- Step 1 moves the selected background files into `[experiment folder]/Backgrounds`.
+  If you need to keep originals in place, duplicate them before using the GUI.
+
+## Acknowledgement
+
+The original SPC workflow code was developed by Dr. H.F. Lowe and Dr. E.G. Hill
+at Imperial College London. Many thanks to them for the original version and
+coding foundation.
